@@ -5,7 +5,7 @@ import { Request, Response } from 'express'
 
 class UploaderController {
 
-    @lazyInject(TYPES.FIREBASE_FILE_STORAGE)
+    @lazyInject(TYPES.LOCAL_FILE_STORAGE)
     private fileStorage!: FileStorage;
 
     saveUploaded = (req: Request, res: Response) => {
